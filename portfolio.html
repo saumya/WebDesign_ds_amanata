@@ -12,7 +12,10 @@
 	<title> Portfolio </title>
 
 	<link rel="stylesheet" type="text/css" href="libs/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  
+  <script src="libs/js/jquery-3.5.1.min.js"></script>
+  <script src="libs/js/app.js"></script>
 
 </head>
 <body class="has-navbar-fixed-top">
@@ -22,18 +25,23 @@
 		<a class="navbar-item" href="index.html">
       Portfolio
     </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
 	</div>
-	<!--
+	
 	<div class="navbar-menu">
 	  <div class="navbar-start">
-	    <a class="navbar-item"> Home </a>
+	    <a class="navbar-item" href="index.html"> Home </a>
 	  </div>
 
 	  <div class="navbar-end">
-	    <a class="navbar-item"> Contact </a>
+	    <a class="navbar-item" href="#footer_contact"> Contact </a>
 	  </div>
 	</div>
-	-->
+	
 </nav>
 
 
@@ -115,14 +123,14 @@
 </div>
 
 
-<footer class="footer">
+<footer class="footer" id="footer_contact">
   <div class="content has-text-centered">
     
       <p>
         <a href="https://dsamanta.com">Dharma Sangram Amanta</a>. Based in Bhubaneshwar, Odisha, India. Providing service for last 8 years.
       </p>
       <p>
-        <strong> ds_amanta Photography </strong>
+        <strong> DSAmanta Photography </strong>
       </p>
       
       <p> 
