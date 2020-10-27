@@ -7,6 +7,7 @@
 $(function(){
     console.log('ready! portfolio.');
 
+    const pPages = ['wedding.html', 'fashion-and-beauty.html', 'food.html', 'commercial.html', 'street.html', 'travel.html'];
     const portfolioItems = ['Wedding', 'Fashion And Beauty', 'Food', 'Commercial', 'Street', 'Travel'];
     let activeItemNum = 1;
 
@@ -75,6 +76,21 @@ $(function(){
         hideAllDotsExcept(activeItemNum);
         $('#photo_info').html( portfolioItems[activeItemNum-1] );
     }
+
+    // Navigate to the Respective pages
+    $('#active_card_item').on('click', function(){
+      //console.log(activeItemNum, portfolioItems[activeItemNum-1]);
+
+      const uuu = window.location.href;
+      const aaa = uuu.split('/');
+      aaa.splice(aaa.length-1);
+      let u = aaa.join('/') + '/' + pPages[activeItemNum-1];
+
+      //console.log(u);
+      window.location.href = u;
+
+      return false;
+    });
     // initial call
     updateApp();
     // Portfolio.html /
