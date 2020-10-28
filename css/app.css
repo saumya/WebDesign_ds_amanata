@@ -12,10 +12,3 @@ body{
 .tile{
 	height: 8em;
 }
-
-/* Image Gallery */
-
-.svgBtnSize {
-	width: 20px;
-	height: 20px;
-}
